@@ -1,0 +1,67 @@
+running=true
+while running:
+import math
+print(" 1. Addition")
+print(" 2. Subtraction")
+print(" 3. Division")
+print(" 4. Multiplication")
+print(" 5. Square of a no")
+print(" 6. Cube of a no")
+print(" 7. Square root of a no")
+print(" 8. Factorial of a no")
+print(" 9. Log10")
+print(" enter your choice")
+choice=int(input())
+if choice==1:
+    print("Enter the two values")
+    a=int(input())
+    b=int(input())
+    c=a+b
+    print(c)
+elif choice==2:
+    print("Enter the two values")
+    a=int(input())
+    b=int(input())
+    c=a-b
+    print(c)
+elif choice==3:
+    print("Enter the two values")
+    a=int(input())
+    b=int(input())
+    c=a*b
+    print(c)
+elif choice==4:
+    print("Enter the two values")
+    a=int(input())
+    b=int(input())
+    c=a/b
+    print(c)
+elif choice==5:
+    print("Enter a no")
+    a=int(input())
+    c=a*a
+    print(c)
+elif choice==6:
+    print("Enter a no")
+    a=int(input())
+    c=a*a*a
+    print(c)
+elif choice==7:
+    print("Enter a no")
+    a=int(input())
+    c=math.sqrt(a)
+    print(c)
+elif choice==8:
+    print("Enter a no")
+    a=int(input())
+    c=math.factorial(a)
+    print(c)
+elif choice==9:
+    print("Enter a no")
+    a=int(input())
+    c=math.log10(a)
+    print(c)
+    
+else:
+    print("Invalid choice")
+    
