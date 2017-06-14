@@ -1,10 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-username = "gautamamber5@gmail.com"
-password = "hellobaby"
+username = raw_input('enter username')
+password = raw_input('enter password')
 driver = webdriver.Chrome()
 def home():
-	
 	driver.get("https://www.facebook.com/")
 def login():
 	elem = driver.find_element_by_id("email")
@@ -14,7 +13,10 @@ def login():
 def click_b():
 	elem = driver.find_element_by_id("loginbutton")
 	elem.click()
-
+def search():
+	elem = driver.find_element_by_name("q")
+	elem.send_keys("tushargupta")
 home()
 login()
-click_b()
+click_b() 
+search()
